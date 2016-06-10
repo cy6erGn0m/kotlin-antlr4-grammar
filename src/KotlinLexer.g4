@@ -160,6 +160,7 @@ HierarchyModifier_override : 'override';
 
 ClassModifier_enum : 'enum';
 ClassModifier_annotation : 'annotation';
+ClassModifier_data : 'data';
 
 AccessModifier_private : 'private';
 AccessModifier_protected : 'protected';
