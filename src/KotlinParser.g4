@@ -155,6 +155,7 @@ hierarchyModifier
 classModifier
   : 'enum'
   | 'annotation'
+  | 'data'
   ;
 
 accessModifier
