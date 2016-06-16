@@ -98,7 +98,6 @@ BRACE_OPEN : '(';
 BRACE_CLOSE : ')';
 
 Q : '?';
-DQ : '?.';
 DA : '!!.';
 
 DISJ : '||';

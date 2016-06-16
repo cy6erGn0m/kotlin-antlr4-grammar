@@ -341,7 +341,7 @@ tryExpression
   ;
 
 catchBlock
-  : 'catch' '(' annotations SimpleName ':' userType ')' block
+  : 'catch' '(' annotations? SimpleName ':' userType ')' block
   ;
 
 finallyBlock
@@ -355,7 +355,7 @@ loop
   ;
 
 forLoop
-  : 'for' '(' annotations (multipleVariableDeclarations | variableDeclarationEntry) 'in' expression ')' expression
+  : 'for' '(' annotations? (multipleVariableDeclarations | variableDeclarationEntry) 'in' expression ')' expression
   ;
 
 whileLoop
@@ -535,7 +535,8 @@ annotatedLambda
   ;
 
 memberAccessOperation
-  : '.' | '?.' | '?'
+  : '.'
+  | '?' '.'?
   ;
 
 functionLiteral
